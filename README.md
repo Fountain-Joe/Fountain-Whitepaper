@@ -15,8 +15,9 @@ The Whitepaper of [Fountain project](https://fountainhub.com)
 
 ### Changlog
 - 2018-11-28
-  - Add: FP loan
-  - Change: The heat average value will be divided by 128 to define the tail content
-
+  - Realized: The users vote for the content. Both the authors and voters are rewarded for their contribution to the ecology.
+  - Add: FP loan.
+  - Change: The heat average value will be divided by 128 to define the tail content.
+  - Change: The distribution ratio of authors and voters will be 75:25.
 - V0.96
   - Base Version
