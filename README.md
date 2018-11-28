@@ -17,3 +17,6 @@ The Whitepaper of [Fountain project](https://fountainhub.com)
 - 2018-11-28
   - Add: FP loan
   - Change: The heat average value will be divided by 128 to define the tail content
+
+- V0.96
+  - Base Version
