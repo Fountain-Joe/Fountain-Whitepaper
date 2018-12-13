@@ -124,27 +124,27 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="../../WP-Graph/zh-cn/image-2-TailTrimming.png"/></div>
  
-这里横轴代表热度值，纵轴代表文章数。将热度平均值 1/e 以下（即红色部分）定义为尾部内容。并对其权重进行调整：
+这里横轴代表热度值，纵轴代表文章数。
 
-将尾部内容根据热度值从高到底排序，根据齐夫定律 ，取尾部内容中的最大热度值除以排序序号，作为新的权重。这样可以最大限度地降低尾部的灌水内容所占权重，同时保留一定的收益。
+将所有文章根据热度值从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第i的文章分配值为1/i。
 
-根据上面所说的规则，现在一篇内容的权重为：
+根据上面所说的规则，现在一篇内容的分配值为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24Q_i%20%3D%20%5Cbegin%7Bcases%7D%20H_i%20%26%20%5Cquad%20%5Ctext%7BTop%20Contents%7D%20%5C%5C%20H_T/I_i%20%26%20%5Cquad%20%5Ctext%7BTail%20Contents%7D%20%5Cend%7Bcases%7D%20%24%24"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?V_i%3D1/i"/></div>
 
-其中![](http://latex.codecogs.com/svg.latex?H_i)是内容的热度值，![](http://latex.codecogs.com/svg.latex?H_T)是尾部最大热度值，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20I_i)是尾部内容排序序号。最终的收益分配公式为：
+其中i是该内容的根据热度值在所有内容中的排名。最终的收益分配公式为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24R_i%3DT%5Ctimes%20%5Cfrac%7BQ_i%7D%7B%5Csum%20Q_i%7D%24%24"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
 
-其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BQ_i%7D%24)是当日所有内容的收益分配权重之和。
+其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BV_i%7D%24)是当日所有内容的收益分配权重之和。
 
-内容收益确定后，将在该内容的作者和投票人中进行再次分配，且该分配比例为作者占80%，投票人占20%。所以作者所获得的奖励为：
+内容收益确定后，将在该内容的作者和投票人中进行再次分配，且该分配比例为作者占75%，投票人占25%。所以作者所获得的奖励为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bwriter%7D%3D0.8%5Ctimes%20R_i%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bwriter%7D%3D0.75%5Ctimes%20R_i%24%24"/></div>
 
 根据每个投票者的投票权重，占每篇内容投票权重总和的占比，等比分配属于投票人的20%的文章或评论所获得的奖励：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bvoter%7D%3D0.2%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bvoter%7D%3D0.25%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%24%24"/></div>
 
 # 运营贡献
 除却内容贡献外，基于运营的贡献也是非常重要的。我们将内容社区应用运营工作中有基础价值的且有群众基础的社区治理贡献和介绍推广贡献，列入奖励范围。每年增发 FTN 中的15%将用来作为这部分的奖励池。
