@@ -110,9 +110,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 内容热度值计算方式：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?A%3Dlike-dislike"/></div>
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?like%3D%5Csum_%7Bi%5Cin%20Likers%7DW_i"/></div>
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?dislike%3D%5Csum_%7Bi%5Cin%20Dislikers%7DW_i"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cbegin%7Baligned%7D%20A%26%3Dlike-dislike%5C%5C%20like%26%3D%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%26%3D%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Baligned%7D"/></div>
 
 这里 ![](http://latex.codecogs.com/svg.latex?W_i)是进行点赞或点踩的用户 i 的投票权重， ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24like%24%24) 是所有点赞的人的投票权重的总和，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24dislike%24%24) 是所有点踩的人的投票权重的总和。
 
