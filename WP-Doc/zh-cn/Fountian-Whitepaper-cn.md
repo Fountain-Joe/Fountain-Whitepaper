@@ -140,7 +140,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 内容收益确定后，将在该内容的作者和投票人中进行再次分配，且该分配比例为作者占75%，投票人占25%。所以作者所获得的奖励为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bwriter%7D%3D0.75%5Ctimes%20R_i%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20r_%7Bwriter%7D%3D0.75%5Ctimes%20R_i"/></div>
 
 属于投票人的25%的文章或评论所获得的奖励将归点赞者所有，每个点赞者将根据其点赞在该内容点赞权重总和中的占比而获得相应的奖励。所以投票者所获的奖励为：
 
