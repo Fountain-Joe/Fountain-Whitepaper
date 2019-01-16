@@ -134,7 +134,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 其中i是该内容的根据热度值在所有内容中的排名。最终的收益分配公式为：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
 
 其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BV_i%7D%24)是当日所有内容的收益分配权重之和。
 
