@@ -144,7 +144,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 属于投票人的25%的文章或评论所获得的奖励将归点赞者所有，每个点赞者将根据其点赞在该内容点赞权重总和中的占比而获得相应的奖励。所以投票者所获的奖励为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cbegin%7Baligned%7D%20r_%7Bliker%7D%26%3D0.25%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%5C%5C%20r_%7Bdisliker%7D%26%3D0%20%5Cend%7Baligned%7D"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%5Cbegin%7Baligned%7D%20r_%7Bliker%7D%26%3D0.25%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%5C%5C%20r_%7Bdisliker%7D%26%3D0%20%5Cend%7Baligned%7D"/></div>
 
 # 运营贡献
 除却内容贡献外，基于运营的贡献也是非常重要的。我们将内容社区应用运营工作中有基础价值的且有群众基础的社区治理贡献和介绍推广贡献，列入奖励范围。每年增发 FTN 中的15%将用来作为这部分的奖励池。
