@@ -116,7 +116,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 我们认为评论即内容，同时文章评论的热度又是文章热度的一种体现。所以每篇内容的最终热度值将加入子评论的投票热度值进行计算：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24H%20%3D%20A%20+%20%5Calpha%20%5Csum_%7Bi%7DA_%7Bi%7D%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20H%3DA&plus;%5Calpha%20%5Csum_%7Bi%7D%20A_i"/></div>
 
 其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24A%24%24)是内容本身的投票热度值，而后面的求和部分是对子评论的投票热度值进行求和。![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24%5Calpha%24%24)是子评论的权重参数，目前拟定为0。
 ## 内容奖励分配
