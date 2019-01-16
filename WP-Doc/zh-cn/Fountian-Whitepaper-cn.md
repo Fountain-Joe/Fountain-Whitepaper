@@ -130,7 +130,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 根据上面所说的规则，现在一篇内容的分配值为：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?V_i%3D1/i"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
 
 其中i是该内容的根据热度值在所有内容中的排名。最终的收益分配公式为：
 
