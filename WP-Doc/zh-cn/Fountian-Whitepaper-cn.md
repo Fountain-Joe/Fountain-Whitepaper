@@ -106,11 +106,13 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 与 Steem 不同的是，Fountain 上的内容是可以被永远投票的。这意味着一篇十年前的小说，在今天依然可以被用户投票，并得到奖励。
 ## 内容热度值
-在计算出每次投票的权重后，我们便可根据读者们为每篇内容投票的情况，计算出内容的热度值。我们认为无论是赞还是踩，只是代表了不同用户的价值观，本身并没有对错，因此都应当被视作投票行为。
+在计算出每次投票的权重后，我们便可根据读者们为每篇内容投票的情况，计算出内容的热度值。对内容点赞将提高内容热度值，反之，对内容点踩将降低内容热度值。
 
 内容热度值计算方式：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24A%20%3D%20like+dislike%24%24%20%5C%5C%20%5C%5C%24%24like%20%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_%7Bi%7D%24%24%20%5C%5C%24%24dislike%20%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_%7Bi%7D%24%24"/></div>
+<div align="center"><img src="http://http://latex.codecogs.com/svg.latex?A%3Dlike-dislike"/></div>
+<div align="center"><img src="http://http://latex.codecogs.com/svg.latex?like%3D%5Csum_%7Bi%5Cin%20Likers%7DW_i"/></div>
+<div align="center"><img src="http://http://latex.codecogs.com/svg.latex?dislike%3D%5Csum_%7Bi%5Cin%20Dislikers%7DW_i"/></div>
 
 这里 ![](http://latex.codecogs.com/svg.latex?W_i)是进行点赞或点踩的用户 i 的投票权重， ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24like%24%24) 是所有点赞的人的投票权重的总和，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24dislike%24%24) 是所有点踩的人的投票权重的总和。
 
