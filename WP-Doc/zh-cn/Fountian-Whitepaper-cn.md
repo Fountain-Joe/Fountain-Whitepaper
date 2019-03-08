@@ -102,7 +102,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 ## 投票权重
 作者发表内容，读者阅读内容并产生比如点赞或点踩的投票行为，而每一位读者持有的FP不同，产生的投票权重也就不同。
 
-我们会设定一个区间[m,n]，投票人 i 可以在区间内设定自己的投票系数 ![](https://latex.codecogs.com/svg.latex?C_i)。投票人每一次点赞或者点踩的权重为 ![](http://latex.codecogs.com/svg.latex?W_i%3D%28FP_i-D%29/C_i)。其中 ![](http://latex.codecogs.com/svg.latex?FP_i)是投票人 i 所拥有的 FP 总数（如果在一天内投票人的 FP 数发生变化，则以最后的FP数为准）；![](http://latex.codecogs.com/svg.latex?D) 是准备金；![](http://latex.codecogs.com/svg.latex?C_i) 是投票人 i 的投票系数。
+我们会设定一个区间[m,n]，投票人 i 可以在区间内设定自己的投票系数 ![](https://latex.codecogs.com/svg.latex?C_i)。投票人每一次点赞或者点踩的权重为 ![](http://latex.codecogs.com/svg.latex?W_i%3D%28FP_i-D%29/C_i)。其中 ![](http://latex.codecogs.com/svg.latex?FP_i)是计算PoC收益时投票人 i 所拥有的 FP 总数；![](http://latex.codecogs.com/svg.latex?D) 是准备金；![](http://latex.codecogs.com/svg.latex?C_i) 是投票人 i 的投票系数。
 
 与 Steem 不同的是，Fountain 上的内容是可以被永远投票的。这意味着一篇十年前的小说，在今天依然可以被用户投票，并得到奖励。
 ## 内容热度值
@@ -181,7 +181,7 @@ Fountain 的生态架构，可以分为四层，即链层、行业协议层、�
 
 由于 Fountain 的初衷是利用 Token 奖励来构建有价值的内容社区，进而整体方案设计主要着重于 PoC 机制，为了最快速对 PoC 机制的测试和后续迭代，初期 Fountain 可以基于现有成熟的公链如以太坊或 EOS 进行开发。Fountain 的发展预期分为三个阶段：
 # Alpha阶段
-本阶段的核心目标，是实现包括 Fountain 代币系统、账号系统、内容寻址与获取、基于内容的交互激励在内的核心功能。在本阶段中，我们将建立一套链上地址到内容的寻址系统，并建立起用户信息与交互收益的完整记录系统。同时将与合作方一同建立一套基于链上交互行为的收益核算系统，初步实现 PoC 机制及其它云上配套服务，并进行相关记录与测试，以完善相关社区设定与配置，为未来的拓展做好准备。
+本阶段的核心目标，是实现包括 Fountain 代币系统、账号系统、内容寻址与获取、基于内容的交互激励在内的核心功能。在本阶段中，我们将建立一套链上地址到内容的寻址系统，并建立起用户信息与交互收益的完整记录系统。同时将与合作方一同建立基于齐夫定律的系统，初步实现 PoC 机制及其它云上配套服务，并进行相关记录与测试，以完善相关社区设定与配置，为未来的拓展做好准备。
 
 本阶段完成时，链上与云上的基础服务和经济激励模型将基本完成，可进行初步测试。同时，我们也会开始着手为未来的行业链定制一套完整的公链体系（Fountain 链），在已有公链如以太坊、EOS等的基础上，针对行业特性如海量用户、高频交互等进行定制。
 # Beta阶段
@@ -223,3 +223,4 @@ Fountain 结构化地提出了 PoC+DPoS 的 token 经济解决框架，通过与
 1. [附1：合作伙伴扩展方向](./Appendixes/Appendix-1-Partner-Expansion-Direction-cn.md)
 2. [附2：社区治理草案](./Appendixes/Appendix-2-Community-Governance-cn.md)
 3. [附3：技术方案](./Appendixes/Appendix-3-Technical-Solution-cn.md)
+4. [附4：借贷机制](./Appendixes/Appendix-4-investment-cn.md)
