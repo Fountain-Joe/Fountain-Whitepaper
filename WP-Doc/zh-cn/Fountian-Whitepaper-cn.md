@@ -112,7 +112,8 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20%5Cbegin%7Baligned%7D%20A%26%3Dlike-dislike%5C%5C%20like%26%3D%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%26%3D%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Baligned%7D"/></div>
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%20A%20%26%3D%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%20like-dislike%20%2C%26%20like%5Cgeq%20dislike%5C%5C%200%20%2C%26%20like%3C%20dislike%20%5Cend%7Barray%7D%5Cright.%5C%5C%20like%20%26%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%20%26%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Balign*%7D"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B120%7D%20%5Cbegin%7Balign*%7D%20A%20%26%3D%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%20like-dislike%20%2C%26%20like%5Cgeq%20dislike%5C%5C%200%20%2C%26%20like%3C%20dislike%20%5Cend%7Barray%7D%5Cright.%5C%5C%20like%20%26%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%20%26%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Balign*%7D"/></div>
+
 
 这里 ![](http://latex.codecogs.com/svg.latex?W_i)是进行点赞或点踩的用户 i 的投票权重， ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24like%24%24) 是所有点赞的人的投票权重的总和，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24dislike%24%24) 是所有点踩的人的投票权重的总和。
 
