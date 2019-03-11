@@ -124,7 +124,7 @@ After calculating the weight of each vote, we can calculate the heat value of th
 
 See Content heat value calculation method below:
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24A%20%3D%20like+dislike%24%24%20%5C%5C%20%5C%5C%24%24like%20%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_%7Bi%7D%24%24%20%5C%5C%24%24dislike%20%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_%7Bi%7D%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20A%20%26%3D%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%20like-dislike%20%2C%26%20like%5Cgeq%20dislike%5C%5C%200%20%2C%26%20like%3C%20dislike%20%5Cend%7Barray%7D%5Cright.%5C%5C%20like%20%26%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%20%26%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Balign*%7D"/></div>
 
 Here ![](http://latex.codecogs.com/svg.latex?W_i) is the voting weight of the user *i* who likes or clicks, ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24like%24%24) is the sum of the voting weights of all the people who like, and ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24dislike%24%24) is the sum of the voting weights of all the people who step on.
 
@@ -132,17 +132,11 @@ We think that comments are content, and the heat of article comments is a reflec
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24H%20%3D%20A%20+%20%5Calpha%20%5Csum_%7Bi%7DA_%7Bi%7D%24%24"/></div>
 
-Where  is the voting heat value of the content itself, and the subsequent summation part is to sum the voting heat values of the sub-comments.  is the weight parameter of the sub-review which is currently set to 0.5.
 Where ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24A%24%24) is the voting heat value of the content itself, and the subsequent summation part is to sum the voting heat values of the sub-comments. ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24%5Calpha%24%24) is the weight parameter of the sub-review which is currently set to 0.
 
 ## Content reward distribution
-In general, moderate heat articles are the majority, the articles with particularly high heat and extremely low heat are relatively few, close to the Beta distribution, as shown below:
-
-<div align="center"><img src="../../WP-Graph/en/image-2-TailTrimming.png"/></div>
-
-Here, the horizontal axis represents the heat value, and the vertical axis represents the number of articles. The heat average value of ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%241/e%24%24) or less (ie, the red part) is defined as the tail content. And adjust its weight:
-
-We sort The tail content from high to low according to the heat value. According to Ziff's law, the maximum heat value in the tail content is divided by the sorting number as the new weight. This minimizes the weight of the tail's irrigation content while retaining a certain amount of revenue.
+We sort The tail content from high to low according to the heat value. According to Ziff's law, each article will get an assigned value:
+the article rank first get 1, rank second get 1/2 ... rank n get *1/n*.
 
 According to the rules mentioned above, the weight of an article now is:
 
