@@ -113,9 +113,9 @@ Content is the most critical value in the Fountain, and the author of the conten
 ## Voting weight
 The author publishes the content, and the reader reads the content and generates voting behaviors such as likes or dislikes, and each reader holds a different FP, and the voting weight is different.
 
-There is an close interval *[m,n]*, in which the voter *i* could set his voting conefficient ![](https://latex.codecogs.com/svg.latex?C_i). The weight assigned to each click or point is: ![](http://latex.codecogs.com/svg.latex?W_i%3D%28FP_i-D%29/C_i).
+There is a close interval *[m,n]*, in which the voter *i* could set his voting conefficient ![](https://latex.codecogs.com/svg.latex?C_i). The weight assigned to each click or point is: ![](http://latex.codecogs.com/svg.latex?W_i%3D%28FP_i-D%29/C_i).
 
-Where ![](http://latex.codecogs.com/svg.latex?FP_i) is the total number of FPs owned by voter *i*; ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24D%24%24) is the reserve; ![](http://latex.codecogs.com/svg.latex?C_i) is the voing coefficient.
+Where ![](http://latex.codecogs.com/svg.latex?FP_i) is the total number of FPs owned by voter *i*; ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24D%24%24) is the reserve; ![](http://latex.codecogs.com/svg.latex?C_i) is the voting coefficient.
 
 Unlike Steem, the content on Fountain can be always voted. This means that a novel ten years ago can still be voted and rewarded by users today.
 
