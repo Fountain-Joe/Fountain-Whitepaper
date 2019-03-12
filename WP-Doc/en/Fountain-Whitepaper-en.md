@@ -140,7 +140,7 @@ the article rank first get 1, rank second get 1/2 ... rank n get 1/n.
 
 According to the rules mentioned above, the assigned value of an article now is:
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24Q_i%20%3D%20%5Cbegin%7Bcases%7D%20H_i%20%26%20%5Cquad%20%5Ctext%7BTop%20Contents%7D%20%5C%5C%20H_T/I_i%20%26%20%5Cquad%20%5Ctext%7BTail%20Contents%7D%20%5Cend%7Bcases%7D%20%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
 
 Where i is the rank of the article. The final income distribution formula is:
 
