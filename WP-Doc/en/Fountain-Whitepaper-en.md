@@ -136,25 +136,25 @@ Where ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24A%24%24) i
 
 ## Content reward distribution
 We sort The tail content from high to low according to the heat value. According to Ziff's law, each article will get an assigned value:
-the article rank first get 1, rank second get 1/2 ... rank n get *1/n*.
+the article rank first get 1, rank second get 1/2 ... rank n get 1/n.
 
-According to the rules mentioned above, the weight of an article now is:
+According to the rules mentioned above, the assigned value of an article now is:
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%24%24Q_i%20%3D%20%5Cbegin%7Bcases%7D%20H_i%20%26%20%5Cquad%20%5Ctext%7BTop%20Contents%7D%20%5C%5C%20H_T/I_i%20%26%20%5Cquad%20%5Ctext%7BTail%20Contents%7D%20%5Cend%7Bcases%7D%20%24%24"/></div>
 
-Where ![](http://latex.codecogs.com/svg.latex?H_i) is the heat value of the content, ![](http://latex.codecogs.com/svg.latex?H_T) is the maximum heat value of the tail, and ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20I_i) is the sorting number of the tail content. The final income distribution formula is:
+Where i is the rank of the article. The final income distribution formula is:
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24R_i%3DT%5Ctimes%20%5Cfrac%7BQ_i%7D%7B%5Csum%20Q_i%7D%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
 
-Where ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24) is the reward for an article, ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24) is the total number of FPs to be allocated, and ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BQ_i%7D%24) is the sum of the weight distribution weights of all content on the day.
+Where ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24) is the reward for an article, ![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24) is the total number of FPs to be allocated, and ![]![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BV_i%7D%24) is the sum of the assigned value of all content on the day.
 
-After the content revenue is determined, it will be redistributed among the author and the voter of the content, and the distribution ratio is 80% for the author and 20% for the voter. So the rewards the author gets are:
+After the content revenue is determined, it will be redistributed among the author and the voter of the content, and the distribution ratio is 75% for the author and 25% for the voter. So the rewards the author gets are:
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bwriter%7D%3D0.8%5Ctimes%20R_i%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20r_%7Bwriter%7D%3D0.75%5Ctimes%20R_i"/></div>
 
 According to the voting weight of each voter, the proportion of the total voting weight of each content is equal to the reward obtained by assigning 20% of the articles or comments belonging to the voter:
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%5Clarge%20%24%24r_%7Bvoter%7D%3D0.2%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%24%24"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20%5Cbegin%7Baligned%7D%20r_%7Bliker%7D%26%3D0.25%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%5C%5C%20r_%7Bdisliker%7D%26%3D0%20%5Cend%7Baligned%7D"/></div>
 
 ## Operational contribution
 In addition to content contributions, operational-based contributions are also significant. We include community contribution contributions and introduction and promotion contributions that have fundamental values in the application and operation of the content community and are included in the rewards. 15% of the additional annual FTN will be used as a reward pool for this part.
