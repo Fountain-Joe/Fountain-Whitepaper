@@ -247,3 +247,4 @@ Participants interested in Fountain and/or FTN should read this section carefull
 1. [Appendix 1: Partner Expansion Direction](./Appendixes/Appendix-1-Partner-Expansion-Direction-en.md)
 2. [Appendix 2: Draft Community Governance](./Appendixes/Appendix-2-Community-Governance-en.md)
 3. [Appendix 3: Technical Solution](./Appendixes/Appendix-3-Technical-Solution-en.md)
+3. [Appendix 4: FP Loan](./Appendixes/Appendix-4-FP-Loan-cn.md)
