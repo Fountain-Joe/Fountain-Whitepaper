@@ -1,4 +1,4 @@
-# Appendix 3: FP Loan
+# Appendix 4: FP Loan
 ## Loan rules:
 A can lend his FP to B in two ways:
 - Floating profit loan:
