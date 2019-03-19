@@ -1,4 +1,4 @@
-# Fountain Whitepaper V0.96cn
+# Fountain Whitepaper V0.97cn
 **A content ecosystem based on PoC.**
 
 *感谢 Steem，一位先行者。*
