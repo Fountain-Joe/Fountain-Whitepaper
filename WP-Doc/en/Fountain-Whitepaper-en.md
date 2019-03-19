@@ -152,7 +152,7 @@ After the content revenue is determined, it will be redistributed among the auth
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20r_%7Bwriter%7D%3D0.75%5Ctimes%20R_i"/></div>
 
-The reward belonging to the voters will only be distributed to the likers. If the voting weight of the article form the liker j is ![](http://latex.codecogs.com/svg.latex?W_j), the reward for each voter would be:
+The reward belonging to the voters will only be distributed to the likers. If the voting weight of the article form the liker j is ![](http://latex.codecogs.com/svg.latex?W_j), the reward the likers and the dislikers get are:
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20%5Cbegin%7Baligned%7D%20r_%7Bliker%7D%26%3D0.25%5Ctimes%20R_i%5Cfrac%7BW_j%7D%7B%5Csum%20W_j%7D%5C%5C%20r_%7Bdisliker%7D%26%3D0%20%5Cend%7Baligned%7D"/></div>
 
