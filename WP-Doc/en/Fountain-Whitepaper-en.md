@@ -122,7 +122,7 @@ Unlike Steem, the content on Fountain can be always voted. This means that a nov
 ## Content heat
 After calculating the weight of each vote, we can calculate the heat value of the content based on the reader's vote for each content. We believe that whether it got likes or dislikes, it only represents the values of different users, and there is no right or wrong in itself, so it should be regarded as voting.
 
-See Content heat value calculation method below:
+See content heat value calculation method below:
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20A%20%26%3D%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%20like-dislike%20%2C%26%20like%5Cgeq%20dislike%5C%5C%200%20%2C%26%20like%3C%20dislike%20%5Cend%7Barray%7D%5Cright.%5C%5C%20like%20%26%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%20%26%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Balign*%7D"/></div>
 
