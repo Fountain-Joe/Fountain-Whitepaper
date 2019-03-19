@@ -224,4 +224,4 @@ Fountain 结构化地提出了 PoC+DPoS 的 token 经济解决框架，通过与
 1. [附1：合作伙伴扩展方向](./Appendixes/Appendix-1-Partner-Expansion-Direction-cn.md)
 2. [附2：社区治理草案](./Appendixes/Appendix-2-Community-Governance-cn.md)
 3. [附3：技术方案](./Appendixes/Appendix-3-Technical-Solution-cn.md)
-4. [附4：借贷机制](./Appendixes/Appendix-4-investment-cn.md)
+4. [附4：借贷机制](./Appendixes/Appendix-4-FP-Loan-cn.md)
