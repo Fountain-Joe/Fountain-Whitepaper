@@ -122,13 +122,15 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24A%24%24)是内容本身的投票热度值，而后面的求和部分是对子评论的投票热度值进行求和。![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24%5Calpha%24%24)是子评论的权重参数，目前拟定为0。
 ## 内容奖励分配
 
-将所有文章根据热度值从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第i的文章分配值为1/i。
+将所有文章根据热度值从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第n的文章分配值为1/n。
 
 根据上面所说的规则，现在一篇内容的分配值为：
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
 
-其中i是该内容的根据热度值在所有内容中的排名。最终的收益分配公式为：
+其中i是该内容的根据热度值在所有内容中的排名。
+
+最终的收益分配公式为：
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
 
