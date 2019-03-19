@@ -108,7 +108,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 ## 内容热度值
 在计算出每次投票的权重后，我们便可根据读者们为每篇内容投票的情况，计算出内容的热度值。对内容点赞将提高内容热度值，反之，对内容点踩将降低内容热度值。
 
-内容热度值计算方式：
+内容热度值A的计算方式为：
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20A%20%26%3D%20%5Cleft%5C%7B%5Cbegin%7Barray%7D%7Blr%7D%20like-dislike%20%2C%26%20like%5Cgeq%20dislike%5C%5C%200%20%2C%26%20like%3C%20dislike%20%5Cend%7Barray%7D%5Cright.%5C%5C%20like%20%26%3D%20%5Csum_%7Bi%5Cin%20Likers%7DW_i%5C%5C%20dislike%20%26%3D%20%5Csum_%7Bi%5Cin%20Dislikers%7DW_i%20%5Cend%7Balign*%7D"/></div>
 
