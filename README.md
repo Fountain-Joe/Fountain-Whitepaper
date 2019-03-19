@@ -14,10 +14,19 @@ The Whitepaper of [Fountain project](https://fountainhub.com)
 - V0.97-dev181128
 
 ### Changlog
-- 2018-11-28
-  - Realized: The users vote for the content. Both the authors and voters are rewarded for their contribution to the ecology.
-  - Added: FP loan.
-  - Changed: The heat average value will be divided by 128 to define the tail content.
-  - Changed: The distribution ratio of authors and voters will be 75:25.
+- V0.97
+  - Adjust some parameters according to test feedback
+  - Add the loan mechanism
 - V0.96
-  - Base Version
+  - Numerical correction
+  - Fix typo in lock period
+- V0.95
+  - Detailed initial allocation lock period
+- V0.94
+  - Split appendixes to separate files
+  - Minor text adjustment
+- V0.93
+  - Initial release
+
+## Testing Version
+- Click to [view the changes in the current test environment (on Jianshu)](https://github.com/FountainHub/Fountain-Whitepaper/tree/PoC-Testing)
