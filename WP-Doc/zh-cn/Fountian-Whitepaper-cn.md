@@ -127,15 +127,15 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?C%20%3D%20c_1%5Ctimes%20Pv%20&plus;%20c_2%5Ctimes%20Cmt%20&plus;%20c_3%5Ctimes%20L%20&plus;%20c_4%5Ctimes%20U%20&plus;%20c_5%5Ctimes%20Rew%20&plus;%20c_6%5Ctimes%20Rt%20&plus;%20c_7%5Ctimes%20F"/></div>
 
-其中Pv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，U是该内容的有效点踩数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。c_1至c_7为各因子的系数。
+其中Pv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，U是该内容的有效点踩数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。![](https://latex.codecogs.com/svg.latex?c_1)-![](https://latex.codecogs.com/svg.latex?c_7)为各因子的系数。
 
 ## 内容奖励分配
 
-基于内容热度值和内容贡献值，每篇文章都将获得一个分配值：
+基于内容热度值和内容贡献值，每篇文章都将获得一个分配值，文章i的分配值![](https://latex.codecogs.com/svg.latex?V_i)为：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V%20%3D%20H%5E%7B%5Calpha%20%7D%20%5Ctimes%20C%5E%7B%5Cbeta%20%7D"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V_i%20%3D%20H_i%5E%7B%5Calpha%7D%20%5Ctimes%20C_i%5E%7B%5Cbeta%20%7D"/></div>
 
-其中H_i为文章i的热度值，C_i为文章i的贡献值，参数α和β将用于对热度值和贡献值做调整。
+其中![](https://latex.codecogs.com/svg.latex?H_i)为文章i的热度值，![](https://latex.codecogs.com/svg.latex?C_i)为文章i的贡献值，参数α和β将用于对热度值和贡献值做调整。
 
 最终的收益分配公式为：
 
