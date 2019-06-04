@@ -120,13 +120,18 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20H%3DA&plus;%5Calpha%20%5Csum_%7Bi%7D%20A_i"/></div>
 
 其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24A%24%24)是内容本身的投票热度值，而后面的求和部分是对子评论的投票热度值进行求和。![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24%5Calpha%24%24)是子评论的权重参数，目前拟定为0。
+
+## 内容贡献值
+
+内容贡献值是该内容对社区贡献的数值化。我们将通过对该内容相关的各项因子进行加权求和，来得出该文章在社区内的贡献值。内容贡献值的计算方式如下：
+C = c_1\times Pv + c_2\times Co + c_3\times L + c_4\times U + c_5\times Re + c_6\times Rt + c_7\times F
+其中Pv是该内容的访问量，Co是该内容的评论数，L是该内容的点赞数，U是该内容的点踩数，Ree是该内容的赞赏数，Rt是该内容的阅读时长，F是该内容的被分享数。c_1至c_7为各因子的系数。
+
 ## 内容奖励分配
 
-将所有文章根据热度值从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第n的文章分配值为1/n。
+基于内容热度值和内容贡献值，每篇文章都将获得一个分配值：
 
-根据上面所说的规则，现在一篇热度值排名为i的内容，其分配值为：
-
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
+其中H_i为文章i的热度值，C_i为文章i的贡献值，参数α和β将用于对热度值和贡献值做调整。
 
 最终的收益分配公式为：
 
