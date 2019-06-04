@@ -125,7 +125,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 内容贡献值是该内容对社区贡献的数值化。我们将通过对该内容相关的各项因子进行加权求和，来得出该文章在社区内的贡献值。内容贡献值的计算方式如下：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?C%20%3D%20c_1%5Ctimes%20Pv%20&plus;%20c_2%5Ctimes%20Cmt%20&plus;%20c_3%5Ctimes%20L%20&plus;%20c_4%5Ctimes%20U%20&plus;%20c_5%5Ctimes%20Rew%20&plus;%20c_6%5Ctimes%20Rt%20&plus;%20c_7%5Ctimes%20F"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20C%20%3D%20c_1%5Ctimes%20Pv%20&plus;%20c_2%5Ctimes%20Cmt%20&plus;%20c_3%5Ctimes%20L%20&plus;%20c_4%5Ctimes%20U%20&plus;%20c_5%5Ctimes%20Rew%20&plus;%20c_6%5Ctimes%20Rt%20&plus;%20c_7%5Ctimes%20F"/></div>
 
 其中Pv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，U是该内容的有效点踩数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。c_1至c_7为各因子的系数。
 
