@@ -97,7 +97,7 @@ FTN 初始总量为30亿。
 FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公民，为生态的繁荣和治理履行义务，同时享有正当的权利。FP 是整个 PoC 运转的核心，PoC 机制的设计基于 **一FP一票** 的原则，持有 FP 数量越多的用户对 PoC 奖励池的分配也发挥越大的影响力。
 
 因为持有FP的用户的积极投票是整个生态运转的保证，所以每年增发的15%，将奖励给 FP 持有者，鼓励用户将 FTN 兑换成 FP 参与投票。每个 FP 持有者所得到的奖励取决于他们所持有的 FP 占所有用户所持有的 FP 总量的比例。
-# 内容贡献
+# 内容
 内容是 Fountain 中最重要的价值，内容的作者理应得到奖励。用户给内容的投票即是对内容的策展，也是给内容增值的过程，所以投票者也应当获得奖励。内容贡献的奖励主要围绕作者的创作 ( Creation ) 贡献和读者的策展 ( Curation ) 贡献来设计。每年增发 FTN 中的55%将用来作为这部分的奖励池。
 ## 投票权重
 作者发表内容，读者阅读内容并产生比如点赞或点踩的投票行为，而每一位读者持有的FP不同，产生的投票权重也就不同。
@@ -123,19 +123,23 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 ## 内容贡献值
 
-内容贡献值是该内容对社区贡献的数值化。我们将通过对该内容相关的各项因子进行加权求和，来得出该文章在社区内的贡献值。内容贡献值的计算方式如下：
+内容贡献值是该内容对社区贡献的数值化。每一篇内容都可以获得阅读，点赞，评论，分享，围绕内容的这些行为会增进社区互动，为社区贡献价值。同时这些行为的贡献方式也各不相同，例如一篇内容有1000阅读量，100点赞量，10评论，1分享，我们不能将他们简单地相加，而是需要结合该内容的综合表现，再根据不同行为在内容中的具体意义对各因子做标准化和归一化处理，来得出可真实衡量内容对社区互动贡献的数值。
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?C%20%3D%20c_1%5Ctimes%20Pv%20&plus;%20c_2%5Ctimes%20Cmt%20&plus;%20c_3%5Ctimes%20L%20&plus;%20c_4%5Ctimes%20U%20&plus;%20c_5%5Ctimes%20Rew%20&plus;%20c_6%5Ctimes%20Rt%20&plus;%20c_7%5Ctimes%20F"/></div>
+因此在内容贡献值的计算中，我们将用到内容相关的各项因子，计算方式如下：
 
-其中Pv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，U是该内容的有效点踩数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。![](https://latex.codecogs.com/svg.latex?c_1)-![](https://latex.codecogs.com/svg.latex?c_7)为各因子的系数。
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20C%20%3D%20f%28Uv%29%20&plus;%20f%28Cmt%29%20&plus;%20f%28L%29%20&plus;%20f%28Rew%29%20&plus;%20f%28Rt%29%20&plus;%20f%28F%29"/></div>
+
+其中Pv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，U是该内容的有效点踩数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。
 
 ## 内容奖励分配
 
-基于内容热度值和内容贡献值，每篇文章都将获得一个分配值，文章i的分配值![](https://latex.codecogs.com/svg.latex?V_i)为：
+我们知道内容热度值和内容贡献值都是衡量该内容在社区内价值的重要因子，前者是社区对该内容价值的认可，后者是该内容为社区价值的贡献。在计算该内容的真实价值时，我们会先考虑社区对该内容的观点，即根据内容热度对内容赋值，再将内容获得的赋值映射至该内容对社区的贡献中，得出。
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V_i%20%3D%20H_i%5E%7B%5Calpha%7D%20%5Ctimes%20C_i%5E%7B%5Cbeta%20%7D"/></div>
+由此可知，每篇文章都可基于内容热度值合内容贡献值，获得一个分配值，文章i的分配值![](https://latex.codecogs.com/svg.latex?V_i)为：
 
-其中![](https://latex.codecogs.com/svg.latex?H_i)为文章i的热度值，![](https://latex.codecogs.com/svg.latex?C_i)为文章i的贡献值，参数α和β将用于对热度值和贡献值做调整。
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V_i%20%3D%20f%28H_i%29%20%5Ctimes%20f%28C_i%29"/></div>
+
+其中![](https://latex.codecogs.com/svg.latex?H_i)为文章i的热度值，![](https://latex.codecogs.com/svg.latex?C_i)为文章i的贡献值。
 
 最终的收益分配公式为：
 
