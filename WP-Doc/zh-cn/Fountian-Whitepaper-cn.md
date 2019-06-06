@@ -129,7 +129,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20C%20%3D%20f%28Uv%29%20&plus;%20f%28Cmt%29%20&plus;%20f%28L%29%20&plus;%20f%28Rew%29%20&plus;%20f%28Rt%29%20&plus;%20f%28F%29"/></div>
 
-其中Uv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，Rew是该内容的有效赞赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。
+其中Uv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，Rew是该内容的有效打赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。
 
 ## 内容奖励分配
 
