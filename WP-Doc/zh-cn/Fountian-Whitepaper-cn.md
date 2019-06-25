@@ -127,21 +127,21 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 因此在内容贡献值的计算中，我们将用到内容相关的各项因子，计算方式如下：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20C%20%3D%20f%28Uv%29%20&plus;%20f%28Cmt%29%20&plus;%20f%28L%29%20&plus;%20f%28Rew%29%20&plus;%20f%28Rt%29%20&plus;%20f%28F%29"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20C%20%3D%20f%28Uv%29&plus;%20f%28Cmt%29%20&plus;%20f%28L%29%20&plus;%20f%28Rew%29%20&plus;%20f%28Rt%29%20&plus;%20f%28F%29%20&plus;%20f%28Coll%29"/></div>
 
-其中Uv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，Rew是该内容的有效打赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数。
+其中Uv是该内容的有效访问量，Cmt是该内容的有效评论数，L是该内容的有效点赞数，Rew是该内容的有效打赏数，Rt是该内容的有效阅读时长，F是该内容的有效被分享数, Coll是该内容的有效收藏数。
 
 ## 内容奖励分配
 
 我们知道内容热度值和内容贡献值都是衡量该内容在社区内价值的重要因子，前者是社区对该内容价值的认可，后者是该内容为社区价值的贡献。在计算该内容的真实价值时，我们会先考虑社区对该内容的观点，即根据内容热度对内容赋值，再将内容获得的赋值映射至该内容对社区的贡献中，得出。
 
-由此可知，每篇文章都可基于内容热度值合内容贡献值，获得一个得分，文章i的得分![](https://latex.codecogs.com/svg.latex?V_i)为：
+由此可知，每篇文章都可基于内容热度值合内容贡献值，获得一个得分，文章i的得分![](https://latex.codecogs.com/svg.latex?S_i)为：
 
-<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V_i%20%3D%20f%28H_i%29%20%5Ctimes%20f%28C_i%29"/></div>
+<div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20S_i%20%3D%20f%28H_i%29%20%5Ctimes%20f%28C_i%29"/></div>
 
 其中![](https://latex.codecogs.com/svg.latex?H_i)为文章i的热度值，![](https://latex.codecogs.com/svg.latex?C_i)为文章i的贡献值。
 
-将所有文章根据得分![](https://latex.codecogs.com/svg.latex?V_i)从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第n的文章分配值为1/n。
+将所有文章根据得分![](https://latex.codecogs.com/svg.latex?S_i)从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第n的文章分配值为1/n。
 
 根据上面所说的规则，现在一篇热度值排名为i的内容，其分配值为：
 
