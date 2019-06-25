@@ -135,11 +135,17 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 我们知道内容热度值和内容贡献值都是衡量该内容在社区内价值的重要因子，前者是社区对该内容价值的认可，后者是该内容为社区价值的贡献。在计算该内容的真实价值时，我们会先考虑社区对该内容的观点，即根据内容热度对内容赋值，再将内容获得的赋值映射至该内容对社区的贡献中，得出。
 
-由此可知，每篇文章都可基于内容热度值合内容贡献值，获得一个分配值，文章i的分配值![](https://latex.codecogs.com/svg.latex?V_i)为：
+由此可知，每篇文章都可基于内容热度值合内容贡献值，获得一个得分，文章i的得分![](https://latex.codecogs.com/svg.latex?V_i)为：
 
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?%5Clarge%20V_i%20%3D%20f%28H_i%29%20%5Ctimes%20f%28C_i%29"/></div>
 
 其中![](https://latex.codecogs.com/svg.latex?H_i)为文章i的热度值，![](https://latex.codecogs.com/svg.latex?C_i)为文章i的贡献值。
+
+将所有文章根据得分![](https://latex.codecogs.com/svg.latex?V_i)从高到底排序，根据齐夫定律，每篇文章都将获得一个分配值：排名第一的文章分配值为1，排名第二的文章分配值为1/2，排名第三的文章分配值为1/3……排名第n的文章分配值为1/n。
+
+根据上面所说的规则，现在一篇热度值排名为i的内容，其分配值为：
+
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
 
 最终的收益分配公式为：
 
