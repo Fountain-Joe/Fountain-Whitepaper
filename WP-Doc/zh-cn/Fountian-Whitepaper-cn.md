@@ -204,6 +204,8 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 * 若所有参与人质押额大于当日贡献者配额池增发额，则以各个参与者质押总额占当日全部参与者质押总额之比作为权重，等比分配，不足部分自动作为次日质押。
 * 每个参与者次日的质押总额＝今日质押总额－今日已得分配额＋次日新增质押总额。
 
+更多社区治理制度介绍请参考附件2。
+
 # 用户注册与准备金
 为应对针对奖励池的女巫攻击，目前比较常见的抑制方法是：
 * 较高的注册认证门槛;
@@ -260,6 +262,6 @@ Fountain 结构化地提出了 PoC+DPoS 的 token 经济解决框架，通过与
 # 附录
 - [DAO创作者宣言——基于价值共识的生产关系](./DAO-Creator-Manifesto-cn.md)
 1. [附1：合作伙伴扩展方向](./Appendixes/Appendix-1-Partner-Expansion-Direction-cn.md)
-2. [附2：社区治理草案](./Appendixes/Appendix-2-Community-Governance-cn.md)
+2. [附2：社区治理制度](./Appendixes/Appendix-2-Community-Governance-cn.md)
 3. [附3：技术方案](./Appendixes/Appendix-3-Technical-Solution-cn.md)
 4. [附4：借贷机制](./Appendixes/Appendix-4-FP-Loan-cn.md)
