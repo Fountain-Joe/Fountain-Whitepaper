@@ -163,7 +163,7 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20R_i%3DC_i&plus;Re%5Ctimes%20%5Cfrac%7BC_i%7D%7B%5Csum%20C_i%7D"/></div>
 
-其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BV_i%7D%24)是当日所有内容的收益分配权重之和。
+其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数。
 
 内容收益确定后，将在该内容的作者和投票人中进行再次分配，且该分配比例为作者占75%，投票人占25%。所以作者所获得的奖励为：
 
