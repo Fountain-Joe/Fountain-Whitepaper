@@ -147,9 +147,21 @@ FP 是 Fountain 的权利凭证。持有 FP 就像是成为了 Fountain 的公�
 
 <div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20V_i%3D1/i"/></div>
 
-最终的收益分配公式为：
+据此做分配曲线A，在分配曲线A下排名为i的文章收益情况为：
 
-<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20R_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Cdpi%7B100%7D%20%5Clarge%20A_i%3DT%5Ctimes%20%5Cfrac%7BV_i%7D%7B%5Csum%20V_i%7D"/></div>
+
+然后根据热度值做分配曲线B，在分配曲线B下排名为i的文章收益情况为：
+
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20B_i%3Dr%5Ctimes%20T%5Ctimes%20%5Cfrac%7BH_i%7D%7B%5Csum%20H_i%7D"/></div>
+
+综合分配曲线A和B的分配结果，得到C曲线：
+
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20C_i%3Dmin%28A_i%2C%20B_i%29"/></div>
+
+最后将余量![](http://latex.codecogs.com/svg.latex?Re%3DT-%5Csum%20C_i)按比例分配给所有文章：
+
+<div align="center"><img src="http://latex.codecogs.com/svg.latex?%5Clarge%20R_i%3DC_i&plus;Re%5Ctimes%20%5Cfrac%7BC_i%7D%7B%5Csum%20C_i%7D"/></div>
 
 其中![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24R_i%24%24)表示一篇文章所获得的奖励，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%24T%24%24)为待分配 FP 总数，![](http://latex.codecogs.com/svg.latex?%5Cdpi%7B300%7D%20%24%5Csum%7BV_i%7D%24)是当日所有内容的收益分配权重之和。
 
